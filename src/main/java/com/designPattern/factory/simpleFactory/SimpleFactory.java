@@ -1,10 +1,11 @@
-package com.designPattern.factory;
+package com.designPattern.factory.simpleFactory;
 
 /*
 以手机来举例
  */
 
 
+import com.designPattern.factory.Phone;
 
 public class SimpleFactory {
 
@@ -25,27 +26,24 @@ public class SimpleFactory {
      }
 }
 
- abstract class Phone{
-
-      public abstract void call();
- }
 
 
-class  XIAOMI extends Phone {
+
+class  XIAOMI implements Phone {
     @Override
     public void call(){
         System.out.println("小米手机打电话");
     }
 
 }
-class  MEIZU extends Phone{
+class  MEIZU implements Phone{
     @Override
     public void call(){
         System.out.println("魅族手机打电话");
     }
 
 }
-class  IPHONE  extends Phone{
+class  IPHONE  implements Phone{
     @Override
     public void call(){
         System.out.println("IPHONE手机打电话");

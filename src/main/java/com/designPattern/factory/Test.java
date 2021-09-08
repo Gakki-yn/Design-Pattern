@@ -1,8 +1,9 @@
 package com.designPattern.factory;
 
-import com.designPattern.factory.FactoryMethod.FactoryMethod;
-import com.designPattern.factory.FactoryMethod.XiaoMiFactory;
-import com.designPattern.factory.FactoryMethod.iPhoneFactory;
+import com.designPattern.factory.abstractFactory.AbstractFactory;
+import com.designPattern.factory.factoryMethod.FactoryMethod;
+import com.designPattern.factory.factoryMethod.XiaoMiFactory;
+import com.designPattern.factory.factoryMethod.iPhoneFactory;
 
 public class Test {
     public static void main(String[] args) {
@@ -13,5 +14,7 @@ public class Test {
 
         FactoryMethod iphone = new iPhoneFactory();
         iphone.phoneCall();
+
+
     }
 }

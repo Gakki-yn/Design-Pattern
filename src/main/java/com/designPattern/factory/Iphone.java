@@ -1,4 +1,4 @@
-package com.designPattern.factory.FactoryMethod;
+package com.designPattern.factory;
 
 public class Iphone implements Phone{
 
