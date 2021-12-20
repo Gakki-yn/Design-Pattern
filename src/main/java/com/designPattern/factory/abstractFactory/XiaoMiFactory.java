@@ -11,5 +11,10 @@ public class XiaoMiFactory implements AbstractFactory{
         return new MiPhone();
     }
 
-    
+    @Override
+    public PC pcWork() {
+        return null;
+    }
+
+
 }
